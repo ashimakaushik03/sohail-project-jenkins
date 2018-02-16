@@ -3,7 +3,8 @@ version: 0.1
 phase:
   build:
     commands:
-     yum install rpm-build make gcc glibc -y
+    - sudo su -
+    - yum install rpm-build make gcc glibc -y
 artifacts:
   files:
     - index.html
