@@ -3,8 +3,7 @@ version: 0.1
 phase:
   build:
     commands:
-      - npm install
-      - npm run Webpack
+     yum install rpm-build make gcc glibc -y
 artifacts:
   files:
     - index.html
