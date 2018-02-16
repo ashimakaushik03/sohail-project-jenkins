@@ -4,7 +4,7 @@ phase:
   build:
     commands:
     - sudo su -
-    - yum install rpm-build make gcc glibc -y
+    - yum install rpm-build make gcc glibc
 artifacts:
   files:
     - index.html
