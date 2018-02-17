@@ -1,12 +1,10 @@
 version: 0.1
 
-phase:
+phases:
   build:
     commands:
-    - sudo su -
-    - sudo wget http://repos.fedorapeople.org/repos/dchen/apache-maven/epel-apache-maven.repo -O /etc/yum.repos.d/epel-apache-maven.repo
-    - sudo sed -i s/\$releasever/6/g /etc/yum.repos.d/epel-apache-maven.repo
-    - sudo yum install -y apache-maven
+    - npm install
+    - npm run Webpack
 artifacts:
   files:
     - index.html
