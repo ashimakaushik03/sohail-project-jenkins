@@ -4,7 +4,8 @@ phases:
   build:
     commands:
     - sudo su -
-    - yum -y install rpm-build
+    - npm install
+    - npm run Webpack
 artifacts:
   files:
     - index.html
